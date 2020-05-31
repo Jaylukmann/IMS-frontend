@@ -1,0 +1,116 @@
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #212890;
+    border-radius: 20px;
+    box-sizing: border-box;
+    resize: vertical; 
+  }  
+  input[type=text], select, textarea:focus{
+    border: 1px solid #ccc;
+  }
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+  
+  /* Style the container */
+  .container {
+    margin-top:5px;
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto; 
+    grid-row-gap: 2%; 
+    grid-column-gap: 2%; 
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding:50px 40px 0px 50px;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    border-right: #ccc;
+    border-radius:50%;
+    width: 20%;
+    margin-top: 6px;
+    border-radius: 20px;
+    margin-bottom:15px;
+  }
+  #vector{
+    float: right;
+    
+    
+  }
+   /* Floating column for labels: 33.3% width */
+  .col-33 {
+    float: left;
+    width: 26%;
+    margin-top: 6px;
+    border-radius: 10px;
+    padding-right:90px;
+    margin-bottom:20px;
+    
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-50 {
+    float: left;
+    width: 48%;
+    margin-top: 6px;
+    border-radius: 20px;
+    padding-right:23px;
+    margin-bottom:20px;
+  }
+  .col-100{
+    float: left;
+    width: 98%;
+    margin-top: 6px;
+    background: #212890;
+    color:White;
+    font-weight: bold;
+    padding:1px;
+    text-emphasis: spacing;
+    border-radius: 20px;
+  }
+   /* Style rows */
+  .row{
+    row-gap: 100px;
+  }
+   /* Style columns */
+   .col-25, .col-33,.col-50,.col-100{
+    column-gap: 100px;
+   }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #blue{
+    background:#212890 ;
+    color:whitesmoke;
+    padding:2px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom:20px;
+    margin-right:50px;
+  }
+  #cancel {
+      padding-right: 30px;
+      text-align: center;
+      color:#212890 ;
+      background:#ccc ;
+      margin-left:50px;
+     }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-33,.col-50,.col-100, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
