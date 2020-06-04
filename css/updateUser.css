@@ -76,14 +76,7 @@ input[type=text], select, textarea{
     padding:1px;
     text-emphasis: spacing;
   }
-   /* Style rows */
-  .row{
-    row-gap: 200px;
-  }
-   /* Style columns */
-   .col-25, .col-30,.col-50,.col-100{
-    column-gap: 200px;
-   }
+   
   /* Clear floats after the columns */
   .row:after {
     content: "";

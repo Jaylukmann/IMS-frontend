@@ -9,62 +9,81 @@
     <body>
         <div class="container">
             <form action="action_page.php">
-                <div class="row">
+                <div class="row" id="first">
                 <div class="col-50">
-                  <input type="text" id="fname" name="billTo" placeholder="Product Name">
+                  <legend>Product Name</legend>
+                  <input type="text" id="fname" name="productName" placeholder="Single-phase D4">
                  </div>
                 
-              <div class="row">
                 <div class="col-50">
-                   <input type="text" id="fname" name="billTo" placeholder="SKU">
+                  <legend>SKU</legend>
+                   <input type="text" id="fname" name="sku" placeholder="EG-3929">
                 </div>
               </div>
 
               <div class="col-100">
-                <textarea placeholder="Description"></textarea>
+                <legend>Description</legend>
+                <textarea placeholder="With Coconut Oil and ultra‐hydrating Coconut Water, this formula provides long-lasting moisture for visibly softer skin. Nourishes for visibly softer skin with a unique illuminating HYDRALUCENCE® blend. */"></textarea>
               </div>
               
               <div class="row">
                 <div class="col-50">
-                   <input type="text" id="fname" name="expiryDate" placeholder="Expiry Date">
+                  <legend>Expiry Date</legend>
+                   <input type="date" id="fname" name="expiryDate" placeholder="March,25,2020">
                 </div>
                 <div class="col-50">
-                  <input type="text" id="fname" name="unitPrice" placeholder="Unit Price">
+                  <legend>unit Price</legend>
+                  <input type="text" id="fname" name="unitPrice" placeholder="#1500">
                 </div>
               </div>
 
               <div class="row">
                 <div class="col-50">
-                    <input type="text" id="fname" name="customerId" placeholder="Quantity">
+                  <legend>Quantity</legend>
+                    <input type="number" id="fname" name="quantity" placeholder="100">
                 </div>
                 <div class="col-50">
-                  <input type="text" id="lname" name="orderId" placeholder="Reorder Level">
+                  <legend>Re-order Level</legend>
+                  <input type="text" id="lname" name="reOrderLevel" placeholder="30">
                 </div>
               </div>
+
               <div class="row">
                 <div class="col-50">
-                   <input type="text" id="fname" name="contactName" placeholder="Reorder Duaration(Days)">
+                  <legend>Reorder Duration(Days)</legend>
+                   <input type="text" id="fname" name="contactName" placeholder="30">
                 </div>
                 <div class="col-50">
-                  <input type="text" id="fname" name="contactNumber" placeholder="Quantity Reorder">
+                  <legend>Quantity Reorder</legend>
+                  <input type="text" id="fname" name="contactNumber" placeholder="30">
                 </div>
               </div>
+
               <div class="row">
                 <div class="col-50">
-                    <input type="text" id="fname" name="salesPIncharge" placeholder="Category">
+                  <legend>Category</legend>
+                    <input type="text" id="fname" name="salesPIncharge" placeholder="Distribution Board">
                 </div>
                 <div class="col-50">
-                  <input type="text" id="fname" name="salesPIncharge" placeholder="Discontinue Reorder">
-                  <img src="images/Frame 59.png" alt="plus vector">
+                  <h2 class="dis">Discontinue Reorder <img src="images/Frame 59.png" alt="plus vector" height="30" width="70"></h2>  
               </div>
               </div>
-            
+
+              <div class=" cards">
+               <img src="images/Frame 51.png" alt="">
+              </div>
+
+              <div class="qr">
+                <img src="images/qr.png" alt="qr">
+              </div>
+
               <div class="row">
                 <div class="col-33" id="blue">
                   <p>SAVE</p>
                 </div>
-                <div class="col-33">
-                  <input type="text" id="lname" name="cancel" placeholder="CANCEL">
+                <div class="col-33" id="cancel">
+                  <p>CANCEL</p>
+                  
                 </div>
                 <div class="col-33">
                     <p></p>
